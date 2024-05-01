@@ -11,7 +11,7 @@ This directory contains annotated files for deploying Dagster with an EcsRunLaun
 5. [Create a Docker ECS context](https://docs.docker.com/cloud/ecs-integration/#create-aws-context):
 
 ```sh
-docker context create dagster-ecs
+docker context create ecs dagster-ecs
 ```
 
 6. [Create ECR Repositories](https://docs.aws.amazon.com/cli/latest/reference/ecr/create-repository.html) for our images:
