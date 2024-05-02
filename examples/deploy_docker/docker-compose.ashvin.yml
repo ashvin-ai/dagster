@@ -19,6 +19,7 @@ services:
       DAGSTER_POSTGRES_PASSWORD: "postgres_password"
       DAGSTER_POSTGRES_DB: "postgres_db"
       DAGSTER_POSTGRES_HOST: "postgres_host"
+      DAGSTER_POSTGRES_PORT: "5432"
       DAGSTER_CURRENT_IMAGE: "docker_example_user_code_image"
     env_file:
       - .env
@@ -50,6 +51,7 @@ services:
       DAGSTER_POSTGRES_PASSWORD: "postgres_password"
       DAGSTER_POSTGRES_DB: "postgres_db"
       DAGSTER_POSTGRES_HOST: "postgres_host"
+      DAGSTER_POSTGRES_PORT: "5432"
     volumes: # Make docker client accessible so we can terminate containers from the webserver
       - /var/run/docker.sock:/var/run/docker.sock
       - /tmp/io_manager_storage:/tmp/io_manager_storage
@@ -77,6 +79,7 @@ services:
       DAGSTER_POSTGRES_PASSWORD: "postgres_password"
       DAGSTER_POSTGRES_DB: "postgres_db"
       DAGSTER_POSTGRES_HOST: "postgres_host"
+      DAGSTER_POSTGRES_PORT: "5432"
     volumes: # Make docker client accessible so we can launch containers using host docker
       - /var/run/docker.sock:/var/run/docker.sock
       - /tmp/io_manager_storage:/tmp/io_manager_storage
