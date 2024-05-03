@@ -60,7 +60,6 @@ services:
     networks:
       - docker_example_network
     depends_on:
-      - docker_example_postgresql
       - docker_example_user_code
 
   # This service runs the dagster-daemon process, which is responsible for taking runs
@@ -88,7 +87,6 @@ services:
     networks:
       - docker_example_network
     depends_on:
-      - docker_example_postgresql
       - docker_example_user_code
 
 networks:
